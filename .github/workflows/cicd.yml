@@ -44,4 +44,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Bandit
-        run: andit -r src -x src/test_* -f xml -o results/bandit-report.xml --exit-zero
+        run: bandit -r src -x src/test_*
