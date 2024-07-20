@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="bandit" tests="3"><testcase classname="src\sample1.py" name="assert_used"><error more_info="https://bandit.readthedocs.io/en/1.7.9/plugins/b101_assert_used.html" type="LOW" message="Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.">Test ID: B101 Severity: LOW Confidence: HIGH
+CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+Location src\sample1.py:7</error></testcase><testcase classname="src\sample1.py" name="hardcoded_password_string"><error more_info="https://bandit.readthedocs.io/en/1.7.9/plugins/b105_hardcoded_password_string.html" type="LOW" message="Possible hardcoded password: 'root'">Test ID: B105 Severity: LOW Confidence: MEDIUM
+CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+Possible hardcoded password: 'root'
+Location src\sample1.py:9</error></testcase><testcase classname="src\sample1.py" name="yaml_load"><error more_info="https://bandit.readthedocs.io/en/1.7.9/plugins/b506_yaml_load.html" type="MEDIUM" message="Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().">Test ID: B506 Severity: MEDIUM Confidence: HIGH
+CWE: CWE-20 (https://cwe.mitre.org/data/definitions/20.html)
+Use of unsafe yaml load. Allows instantiation of arbitrary objects. Consider yaml.safe_load().
+Location src\sample1.py:14</error></testcase></testsuite>

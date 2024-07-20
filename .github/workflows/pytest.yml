@@ -1,4 +1,4 @@
-name: pytest
+name: Run Pytest
 
 on:
   push:  # コミット時に自動実行する方法があるか調べる
@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Unit Test Results (Python 3.7)
-          path: results/*.xml
+          path: coverage.xml
 
       - name: Download Artifacts
         if: success() || failure()
