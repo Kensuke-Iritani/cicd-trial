@@ -3,5 +3,5 @@ branch = True
 
 [report]
 omit =
-    src/c.py
+    src/test_*
 
