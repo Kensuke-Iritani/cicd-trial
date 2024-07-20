@@ -25,9 +25,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Pytest
-        run: python -m pytest --cov=src --cov-branch
-        python -m pytest --cov=src  --xml results/pytest.xml --cov-report  results/coverage.xml
-
+        run: python -m pytest
   bandit:
     runs-on: ubuntu-latest
     steps:
