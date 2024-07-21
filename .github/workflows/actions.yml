@@ -27,6 +27,7 @@ jobs:
       - name: Run Pytest
         run: python -m pytest
         continue-on-error: true
+
   bandit:
     runs-on: ubuntu-latest
     steps:
